@@ -1,0 +1,44 @@
+---
+title: "Recursos computacionais"
+output:
+  html_document:
+    toc: false
+---
+
+O curso prevê o uso de recursos computacionais.
+Para grande parte do curso nos optamos por usar o software 
+$\texttt{R}$. Porém o aluno pode optar por usar outras
+linguagens de programação como $\texttt{python}$. Também serão comentados
+brevemente softwares para matemática simbólica. Entendemos que o uso
+de programas computacionais auxilia o entendimento do conteúdo do curso, 
+sendo que os códigos servem como ilustração do uso dos métodos numéricos.
+
+# Programas para estatística
+
+- [The R project for Statistical Computing](http://www.r-project.org):
+  página do programa **R**
+      - [Curso sobre o uso do R](http://cursos.leg.ufpr.br/ecr/) no LEG
+      - [R-Studio](http://www.rstudio.org) um ambiente para facilitar
+        uso do R.
+      - [R-br](https://listas.inf.ufpr.br/cgi-bin/mailman/listinfo/r-br)
+        é a lista de discussão em português sobre o uso do R.
+        
+- [Python tools for mathematics and statistics](https://www.scipy.org/):
+  página do programa **scipy**.
+
+# Programas para matemática simbólica
+
+- [Wolfram alpha](http://www.wolframalpha.com)
+- [Maxima](http://maxima.sourceforge.net) (e interface
+  [wxmaxima](http://andrejv.github.com/wxmaxima/))
+- [Yacas](http://yacas.sourceforge.net)
+
+# Outros recursos
+
+- [LibreOffice](https://pt-br.libreoffice.org) suíte de programas
+  semelhante ao MS-Office (editor de texto, banco de dados, apresentação
+  e planilha) gratuito
+- [Google sheets](https://www.google.com/sheets/about). Para instalar o
+  *add-on* de estatística:
+        - Add-Ons -> Get Add-Ons -> Procure por "Statistics" -> Procure
+          o add-on de "Google Statisticians and Engineers"

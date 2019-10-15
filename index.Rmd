@@ -1,0 +1,58 @@
+---
+title: "Métodos Computacionais para Inferência Estatística"
+output:
+  html_document:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+source("setup_knitr.R")
+```
+
+<!-- <div class="alert alert-danger" role="alert"> **ATENÇÃO!** Aqui é um -->
+<!-- espaço para avisos. Comente quando não utilizar. </div> -->
+
+# Detalhes da oferta da disciplina
+
+- **Curso:** Programa de Pós-Graduação em Métodos Numéricos e Engenharia
+- **Período:** Segundo semestre de 2019.
+- **Professores Responsáveis:** 
+    - [Wagner Hugo Bonat][], [LEG][]/DEST/UFPR
+    - [Paulo Justiniano Ribeiro Jr][], [LEG][]/DEST/UFPR
+  Laboratório de Estatística e Geoinformação, sala 227, prédio de Exatas)
+- **Horários e Locais:**
+    - Sexta, 14:00 - 18:00h, **Sala de reunião do DEST**
+- **Horários de atendimento do professor:**
+    - Quintas, 16:00-18:00 (preferenciais). Outros horários
+      podem ser agendados previamente por email.
+- **Frequência**: de acordo com as normas da Universidade, mínimo de 75%.
+- **Avaliação**: 
+- **Datas importantes:**
+    - **20/09**: Início do trimestre letivo.
+    - **06/12**: Final do trimestre letivo.
+
+# Programa/objetivos da disciplina
+
+O objetivo deste curso é apresentar um conjunto de ferramentas matemáticas
+e computacionais com aplicações em inferência estatística. Enfâse será dada
+ao método de máxima verossimilhança.
+
+O curso contempla os seguintes tópicos (não necessariamente nesta ordem):
+
+- Ferramentas matemáticas para inferência estatística:
+    - Cálculo Diferencial e Integral;
+    - Vetores, matrizes e sistemas lineares;
+    - Sistemas não-lineares;
+    - Integração e derivação numérica;
+    - Métodos de otimização.
+- Inferência estatística:
+    - Introdução ao pensamento estatístico;
+    - Estimador de máxima verossimilhança e propriedades;
+    - Modelos de regressão;
+    - Modelos de regressão com efeitos aleatórios.
+
+<!-- links -->
+
+[Wagner Hugo Bonat]: http://www.leg.ufpr.br/~wagner
+[Paulo Justiniano Ribeiro Jr]: http://www.leg.ufpr.br/~paulojus
+[LEG]: http://www.leg.ufpr.br

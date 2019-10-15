@@ -1,0 +1,19 @@
+---
+title: "Plano de aulas"
+output:
+  html_document:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+source("setup_knitr.R")
+```
+
+- Semana 1
+
+    - Introdução a verossimilhança
+    - Tópicos em cálculo diferencial para estatísticos.
+
+- Notas
+
+As notas estão disponíveis [nesta página](notas.html).

@@ -1,0 +1,26 @@
+---
+title: "Referências Bibliográficas"
+output:
+  html_document:
+    toc: false
+---
+
+# Bibliografia básica
+
+- Bonat, W. H. and Jr Ribeiro, P. J. and Krainsk, E. T. and Zeviani, W. M. [Métodos Computacionais para Inferência Estatística](http://www.leg.ufpr.br/doku.php/cursos:mcie) 
+SINAPE: Simpósio Nacional de Probabilidade e Estatística, 2012. 
+
+- Casella, G. and Berger, R. L. [Inferência Estatística.](http://www.cengage.com.br/?s=Infer%C3%AAncia+Estat%C3%ADstica) Cengage, 2010.
+
+- Gilat, A. and Subramaniam, V. [Métodos Numéricos para Engenheiros e Cientistas](https://www.amazon.com.br/Num%C3%A9ricos-Engenheiros-Cientistas-Introdu%C3%A7%C3%A3o-Aplica%C3%A7%C3%B5es/dp/8577802051?tag=kns00-20&ascsubtag=go_952006559_54124439720_301325114616_dsa-378859729351_c_) Bookmanm, 2008.
+
+- Guidorizzi, H. L. [Um Curso de Cálculo (Volume I)](https://www.amazon.com.br/Um-Curso-C%C3%A1lculo-Vol-Guidorizzi/dp/8521612591) 
+LTC Editora, 2007. 
+
+- Tanner, M. A. [Tools for Statistical Inference](https://books.google.com.br/books?id=CAPrBwAAQBAJ&printsec=frontcover&dq=Tools+for+Statistical+Inference&hl=en&sa=X&ved=0ahUKEwiuqJawvrbVAhVEhZAKHVGrAd8Q6AEIKDAA#v=onepage&q=Tools%20for%20Statistical%20Inference&f=false) Springer, 1996.
+
+# Leituras complementares
+
+- Bonat, W. H. and Kokonendji, C. C. [Flexible Tweedie regression models for continuous data.](http://www.tandfonline.com/doi/abs/10.1080/00949655.2017.1318876?journalCode=gscs20) Journal of Statistical Computation and Simulation, 87(11), 2138-2152, 2017. 
+
+- Bonat, W. H. and Jr Ribeiro, P. J [Practical likelihood analysis for spatial generalized linear models](https://onlinelibrary.wiley.com/doi/full/10.1002/env.2375) Environmentrics, 27, 83-89, 2016. 

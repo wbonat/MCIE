@@ -1,0 +1,144 @@
+---
+title: "Lista de exercícios: Métodos computacionais para inferência estatística"
+author: "Wagner Hugo Bonat, Paulo Justiniano Ribeiro Jr"
+date: '2019'
+output: pdf_document
+---
+
+```{r, cache=FALSE, include=FALSE}
+source("config/setup.R")
+```
+
+Exercícios para fixação, recomendo que usem o $\texttt{R}$ e/ou o 
+$\texttt{wxMaxima}$ para auxiliar e verificar suas respostas.
+
+# Derivadas e aproximação em séries de Taylor
+
+1. Use o $\texttt{R}$ para desenhar o gráfico das seguintes funções. Identifique o que o parâmetro controla da função. Tenha cuidado com o domínio de cada função. Em todos os casos x deve ser uma constante fixa. O gráfico deve ser feito em função de $\theta$.
+
+a) $f(x; \theta) = 2 \left (  x \log \frac{x}{\theta} - x + \theta  \right )$.
+b) $f(x; \theta) = \binom{100}{x} \exp \left \{ x \log \frac{\theta}{1-\theta} + 100 \log (1 - \theta) \right \}$.
+c) $f(x; \theta) = 2\left (  \frac{x}{\theta} - \log \left \{  \frac{x}{\theta} \right \} -1 \right )$.
+d) $f(x; \theta, p) = 2\left \{ \frac{x^{(2-p)}}{(1-p)(2-p)} - \frac{x \theta^{(1-p)}}{1-p} + \frac{\theta^{(2-p)}}{2-p} \right \}$.
+e) $f(x; \theta, p) = 2\left \{ 1- \cos(x - \theta) \right \}$.
+
+2. Calcule a derivada analitica e numericamente das seguintes funções:
+
+a) $f(x) = x^4$.
+b) $f(x) = x^3$. 
+c) $f(x) = x^{-3}$.
+d) $f(x) = \frac{1}{x^5}$.
+e) $f(x) = \sqrt{x}$.
+f) $f(x) = \sqrt[3]{x}$.
+g) $f(x) = x^{1/3}$.
+h) $f(x) = \frac{1}{x}$.
+i) $f(x) = \sqrt[8]{x}$.
+j) $f(x) = \frac{1}{x^2}$.
+k) $f(x) = 4 x^3 + x^2$.
+l) $f(x) = 5x^4 + 4$.
+m) $f(x) = \frac{2x + 3}{x^2 + 1}$.
+n) $f(x) = (3x^2 + 1)\exp^{x}$.
+o) $f(x) = \sqrt[3]{x}$.
+p) $f(x) = 5 x^4 + 6 x^3 + x^2 + 2$.
+q) $f(x) = \exp{3x}$.
+r) $f(x) = \sin{x^2}$.
+s) $f(x) = (3x^2 + 1)^3$.
+t) $f(x) = \log{(x^2 + 3)}$.
+u) $f(x) = x^2 \exp^{3x}$.
+v) $f(x) = \log{(x^2 + 3x + 9)}$.
+x) $f(x) = \sqrt{x + \exp^{x}}$.
+
+3. Determine a reta tangente ao gráfico de $f(x)$ no ponto requisitado e
+esboce o gráfico.
+
+a) $f(x) = \frac{1}{x}$ no ponto de abscissa 2. 
+b) $f(x) = x^3$ nos pontos de abscissa -3 e 3. 
+c) $f(x) = \exp{x}$ no ponto de abscissa 0. 
+d) $f(x) = \log{x}$ no ponto de abscissa 2. 
+
+4. Aproxime as seguintes funções usando a expansão de Taylor de segunda
+ordem. Esboce o gráfico da função e da aproximação.
+
+a) $\sum_{i=1}^n (y_i - \mu)^2$. Fixe $y_i = 2.09;-1.32;-0.20;0.05;-0.07$.
+b) $\sum_{i=1}^n 2 \left ( y_i \log \frac{y_i}{\mu} + \mu - y_i \right )$. 
+Fixe $y_i = 7;4;4;6;5$.
+c) $\sum_{i=1}^n 2 \left ( \frac{y_i}{\mu} - \log \frac{y_i}{\mu} - 1 \right )$. 
+Fixe $y_i = 2.35;0.16;0.56;1.05;0.51$.
+d) $\sum_{i=1}^n 2 \left ( y_i \log \frac{y_i}{\mu} + (1- y_i) \log \frac{1-y_i}{1-\mu} \right )$.
+Fixe $y_i = 1;0;1;1;1$.
+e) $\sum_{i=1}^n 2 \left ( y_i \log \frac{y_i}{\mu} + (m + y_i) \log \frac{m + \mu}{m + y_i} \right)$. Fixe $m = 1$ e $y_i = 7;4;4;6;5$.
+
+5. Considerando as funções do exercício 4 encontre a reta tangente e
+esboce o gráfico da função com a reta em pelo menos três pontos que
+julgue adequado.
+
+6. Considerando as funções apresentadas no exercício 4 identifique o
+ponto de inflexão e verique se é um ponto de máximo ou mínimo.
+
+7. Sejam $y_i$ valores observados para $i = 1, \ldots, n$. Considere
+a função perda absoluta dada por
+$$ f(\mu) = \sum_{i=1}^n | y_i - \mu|.$$
+
+a) Usando o $\texttt{R}$ ou qualquer outro software conveniente, simule 
+um conjunto de valores adequado para $y_i$.
+b) Esboce o gráfico da função perda para este conjunto de dados e diferente valores de $\mu$.
+c) Encontre o valor de $\mu$ que miniza a função perda absoluta.
+d) Discuta quando a funçao perda absoluta pode ser mais conveniente do que a função perda quadrática.
+
+8. Sejam $y_i$ e $x_i$ valores observados para $i = 1, \ldots, n$. Considere o problema de ajustar uma reta relacionando $y_i$ com $x_i$, usando a função perda absoluta
+$$ f(\beta_0,\beta_1) = \sum_{i=1}^n | y_i - (\beta_0 + \beta_1 x_i)|.$$
+
+a) Usando o $\texttt{R}$ ou qualquer outro software conveniente, simule 
+um conjunto de valores adequado para $y_i$ fixado um vetor para $x_i$ .
+b) Esboce o gráfico da função perda para este conjunto de dados e diferentes valores de $\beta_0$ e $\beta_1$.
+c) Encontre o valor de $\beta_0$ e $\beta_1$ que miniza a função perda absoluta.
+d) Discuta quando a função perda absoluta pode ser mais conveniente do que a função perda quadrática.
+
+
+# Verossimilhança
+
+1. Seja $X$ uma v.a. de uma distribuiçãoo de Poisson ($X \sim P(\lambda)$) 
+para a qual foi obtida a seguinte amostra aleatória: (3, 1, 0, 2, 1, 1, 0, 0).
+
+a) Obtenha a função de verossimilhança, sua aproximação quadrática e intervalos de confiança (pelo menos duas formas) para $\lambda$.
+b) Repita a questão anterior para a reparametrização $\theta = \log(\lambda)$.
+c) Obtenha ainda (por pelo menos dois métodos diferentes) intervalos de confiança para o parâmetro $\lambda$ a partir da função de verossimilhança (aproximada ou não) de $\theta$.
+  
+  
+2. Seja $X$ uma v.a. com distribuição binomial com  $n=12$. Obtenha a função de verossimilhança para cada uma das observações a seguir e desenhe todas em um mesmo gráfico, escalonado se necessário.
+a) $x = 5$
+b) $x \leq 10$
+c) $3 \leq x \leq 7$
+
+  
+3. A fim de se obter uma estimativa do público de um jogo sem utilizar dados de venda de ingressos ou registros das roletas do estádio, foram distribuídas camisas especiais para 300 torcedores sob a condição que estes a utilizassem durante um jogo. Durante o jogo foram selecionados ao acaso 250 torcedores verificando-se que 12 destes possuiam a camisa.  
+a) Obtenha a função de verossimilhança para o número total de torcedores.
+b) Obtenha a estimativa pontual e a intervalar, esta última por pelo menos dois métodos diferentes. 
+c) Repita e compare os resultados caso fossem 500 camisas e 20 com camisas dentre os 250.
+
+
+4. Sejam os dados a seguir provenientes de uma amostra aleatória de $X \sim N(\mu, \sigma^2)$, onde vamos assumir que $\sigma^2$ é conhecido e com valor igual a da variância amostral. Considere as seguintes observações
+$$73 \;\;\; 75 \;\;\; 84 \;\;\; 76 \;\;\; 93 \;\;\; 79 \;\;\; 85 \;\;\; 80 \;\;\; 76 \;\;\; 78 \;\;\; 80. $$
+Denote os valores ordenados por $x_{(1)}, x_{(1)}, x_{(2)}, \ldots x_{(11)}$ 
+Obtenha e compare os gráficos da função de verossimilhança de $\mu$ para os seguintes casos:
+a) O conjunto completo dos dados $x_1, \ldots, x_{11}$ está disponível;
+b) Apenas a média amostral $\bar{x}$ é fornecida;
+c) Apenas a mediana $x_{(5)}$ é fornecida;
+d) Apenas os valores mínimo $x_{(1)}$ e máximo $x_{(n)}$ são fornecidos;
+e) Os quartis ($Q_1$, $Q_2$ e $Q_3$) são fornecidos.
+f) Apenas os dois menores valores $x_{(1)}$ e $x_{(2)}$ são fornecidos.
+
+  
+5. O rendimento, $X_i$, de um campo $i$ de trigo é considerado como sendo normalmente distribuído com média $\theta z_i$ onde $z_i$ é uma quantidade conhecida de fertilizante aplicado no campo. Para um novo campo a quantidade de fertilizante pode ser escolhida, mas o rendimento é aleatório para uma dada quantidade de fertilizante. Presumindo-se que os rendimentos em diferentes campos são independentes (mas não identicamente distribuídos como mudanças no rendimento com a quantidade de fertilizante usada) uns dos outros. Deseja-se estimar o rendimento para uma proporção de fertilizante, isto é, a estimativa de $\theta$. Especificamente, $X_1, \ldots, X_n$ são variáveis aleatórias independentes com distribuição
+$$X_i \sim {\rm N}(\theta x Z_i, 1)$$
+para $i = 1, \ldots,n$, onde $z_1, \ldots, z_n$ são conhecidos (possivelmente diferentes) constantes positivas.
+a) Encontre $\hat{\theta}$.
+b) Mostre que $\hat{\theta}$ é um estimador não viesado, isto é, $E(\hat{\theta})=\theta$ (lembre-se que os valores de $z_i$ são constantes). Verifique suas respostas pegando $z_i = 1$ para $i=1, ...,n$.
+c) Suponha que o rendimento tenha a seguinte propriedade, $X_1, ..., X_n$ são variáveis aleatórias independentes com distribuição 
+$$ X_i{\sim} N(\theta Z_i, Z{_i}^2)$$
+para $i = 1, ...,n$, onde $z_i, ..., z_n$ são constantes conhecidas positivas. Encontre $\hat{\theta}_l$, $\hat{\theta}$ e $\hat{\theta}_u$ com $c^*=3,84$.
+d) Explique em palavras por que $\hat{\theta}$ é diferente dos encontrados anteriormente.
+
+6. Considere um modelo exponencial de parâmetro $\theta$. Encontre um intervalo de confiança para $\theta$ por pelo menos dois métodos e faça um estudo de simulação para verificar a taxa de cobertura de cada método. 
+
+7. Considere o modelo do exercício e uma reparametrização onde $\lambda = 1/\theta$. Encontre o intervalo de confiança para $\lambda$ por pelo menos três métodos e avalia a taxa de cobertura de cada um via simulação. Qual método você considera o melhor? Justifique.

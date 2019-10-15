@@ -1,0 +1,53 @@
+name: "MCIE"
+output_dir: "."
+exclude: ["README.md"]
+output:
+  html_document:
+    theme: flatly
+    highlight: default
+    code_folding: hide
+    number_sections: false
+    toc: true
+    toc_depth: 4
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+navbar:
+  title: "MCIE"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Aulas"
+      href: aulas.html
+    - text: "Referências"
+      href: referencias.html
+    - text: "Programas"
+      href: recursos.html
+    - text: "Tutoriais"
+      menu:
+      - text: "Distribuição exponencial"
+        href: Tutorial/TutorialI.html
+      - text: "Distribuição gaussiana"
+        href: Tutorial/TutorialII.html
+      - text: "Normal Multivariada"
+        href: Tutorial/TutorialIII.html
+      - text: "Poisson com efeitos aleatórios"
+        href: Tutorial/TutorialIV.html
+      - text: "Classificador binário"
+        href: Tutorial/TutorialV.html
+    - text: "Listas de exercícios"
+      menu:
+      - text: "Lista I"
+        href: Listas/ListaCDI.html
+    - text: "Materiais"
+      menu:
+      - text: "Cálculo Diferencial e Integral [PDF]"
+        href: Slides/CDI.pdf
+      - text: "Verosimilhança [PDF]"
+        href: Slides/Verossimilhanca.pdf
+      - text: "Álgebra Linear [PDF]"
+        href: Slides/Algebra.pdf
+      - text: "Sistemas Lineares [PDF]"
+        href: Slides/LinearEq.pdf
+      - text: "Sistemas não lineares [PDF]"
+        href: Slides/NonLinearEq.pdf
